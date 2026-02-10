@@ -1,5 +1,6 @@
 
 Inference with Web UI
+model weight can be downloaded from https://huggingface.co/zihaosheng/TMP-Qwen2.5-7B-Instruct-1M_sft_2025-04-04
 ```bash
 CUDA_VISIBLE_DEVICES=1 llamafactory-cli webchat \
     --model_name_or_path /data/TMP_LLM/Qwen2.5-7B-Instruct-1M_sft_2025-04-04  \
