@@ -74,7 +74,12 @@ def create_web_demo() -> "gr.Blocks":
     engine = Engine(pure_chat=True)
     hostname = os.getenv("HOSTNAME", os.getenv("COMPUTERNAME", platform.node())).split(".")[0]
 
-    with gr.Blocks(title=f"LLaMA Factory Web Demo ({hostname})", css=CSS) as demo:
+    with gr.Blocks(title=f"TMP Demo", css=CSS) as demo:
+        with gr.Row():
+            gr.Image(value="/home/sky-lab/Downloads/lab-logo.svg", show_label=False, width=200, height=100,
+                     container=False)
+        gr.HTML("<h2 style='text-align: center; margin-top: 0;'>LLM-Assisted TMP Strategy Preparation</h2>")
+
         lang = gr.Dropdown(choices=["en", "ru", "zh", "ko", "ja"], scale=1)
         engine.manager.add_elems("top", dict(lang=lang))
 
