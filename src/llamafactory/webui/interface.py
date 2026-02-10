@@ -76,7 +76,7 @@ def create_web_demo() -> "gr.Blocks":
 
     with gr.Blocks(title=f"TMP Demo", css=CSS) as demo:
         with gr.Row():
-            gr.Image(value="/home/sky-lab/Downloads/lab-logo.svg", show_label=False, width=200, height=100,
+            gr.Image(value="./assets/lab-logo.svg", show_label=False, width=200, height=100,
                      container=False)
         gr.HTML("<h2 style='text-align: center; margin-top: 0;'>LLM-Assisted TMP Strategy Preparation</h2>")
 
