@@ -1,3 +1,14 @@
+
+Inference with Web UI
+```bash
+CUDA_VISIBLE_DEVICES=1 llamafactory-cli webchat \
+    --model_name_or_path /data/TMP_LLM/Qwen2.5-7B-Instruct-1M_sft_2025-04-04  \
+    --template qwen \
+    --finetuning_type lora
+```
+
+
+
 ![# LLaMA Factory](assets/logo.png)
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/hiyouga/LLaMA-Factory?style=social)](https://github.com/hiyouga/LLaMA-Factory/stargazers)
